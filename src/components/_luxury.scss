@@ -1,0 +1,9 @@
+@use "../_partials/" as *;
+
+.luxury {
+	background-color: $Very-dark-cyan;
+	border-radius: 0px 0px 10px 10px;
+	.card_panel-learn-more {
+		color: $Very-dark-cyan;
+	}
+}

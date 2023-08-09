@@ -1,0 +1,8 @@
+@use "../_partials/" as *;
+
+.suv {
+	background-color: $Dark-cyan;
+	.card_panel-learn-more {
+		color: $Dark-cyan;
+	}
+}

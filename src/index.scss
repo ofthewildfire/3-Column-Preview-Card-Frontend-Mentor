@@ -1,0 +1,78 @@
+@use "./_partials" as *;
+@use "./components/" as *;
+
+body {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	margin: 2em auto;
+}
+
+.card {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-family: $Lexand400;
+	color: $Transparent-white;
+	width: 80%;
+	margin: 0 auto;
+	// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+
+	.card_panel {
+		padding: 4em 2em;
+		line-height: 1.5;
+		.card_panel-information {
+			color: $Transparent-white;
+			font-size: clamp(0.75rem, 0.6429rem + 0.5357vw, 1.125rem);
+			width: 25ch;
+			margin: 2em 0;
+		}
+		.card_panel-learn-more {
+			text-decoration: none;
+			padding: 0.75em 2em;
+			text-align: center;
+			font-family: $Lexand400;
+			background-color: $Very-light-gray;
+			border-radius: 50px;
+			border: 1px solid $Very-light-gray;
+			font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
+
+			&:is(:hover, :focus, :active) {
+				border: 1px solid $Very-light-gray;
+				background-color: transparent;
+				color: $Very-light-gray;
+				outline: 0.25em dashed grey;
+			}
+		}
+	}
+
+	.card_panel-title {
+		font-family: $BigShoulders700;
+		font-size: clamp(1.75rem, 1.5357rem + 1.0714vw, 2.5rem);
+		text-transform: uppercase;
+		color: $Very-light-gray;
+		margin-top: 1em;
+	}
+}
+
+@media screen and (min-width: 60rem) {
+	body {
+		margin: 0;
+	}
+
+	.card {
+		grid-template-columns: repeat(3, 1fr);
+		max-width: 1440px;
+	}
+
+	.sedan {
+		border-radius: 10px 0px 0px 10px;
+	}
+
+	.luxury {
+		// no es perfecta!
+		border-radius: 0px 10px 10px 0px;
+	}
+}
+
+// ion
+// opinion

@@ -1,0 +1,9 @@
+@use "../_partials/" as *;
+
+.sedan {
+	background-color: $Bright-orange;
+	border-radius: 10px 10px 0 0;
+	.card_panel-learn-more {
+		color: $Bright-orange;
+	}
+}

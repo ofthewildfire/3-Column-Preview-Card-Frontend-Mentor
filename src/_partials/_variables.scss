@@ -1,0 +1,28 @@
+@use "./typography";
+
+// $Bright-orange: #e38826;
+$Bright-orange: #844d13;
+// $Dark-cyan: #006970;
+$Dark-cyan: #00636a;
+$Very-dark-cyan: #004241;
+$Transparent-white: hsla(0, 0%, 100%, 0.75);
+$Very-light-gray: hsl(0, 0%, 95%);
+
+$DefaultFontSize: 0.9375rem;
+
+$Lexand400: "LexandDeca";
+$BigShoulders700: "BigShoulders";
+
+//
+
+// ### Primary
+
+// $Bright-orange: hsl(31, 77%, 52%);
+// $Dark-cyan: hsl(184, 100%, 22%);
+// $Very-dark-cyan: hsl(179, 100%, 13%);
+
+// ### Neutral
+
+//
+// $Transparent-white-paragraphs: #ffffffbf;
+// $Very-light-gray-background-headings-buttons: #f2f2f2;
