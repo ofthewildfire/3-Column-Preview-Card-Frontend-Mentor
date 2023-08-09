@@ -13,9 +13,7 @@ body {
 	grid-template-columns: 1fr;
 	font-family: $Lexand400;
 	color: $Transparent-white;
-	width: 80%;
 	margin: 0 auto;
-	// font-size: clamp(0.9375rem, 0.8839rem + 0.2679vw, 1.125rem);
 
 	.card_panel {
 		padding: 4em 2em;
@@ -56,12 +54,14 @@ body {
 
 @media screen and (min-width: 60rem) {
 	body {
-		margin: 0;
+		max-width: 1440px;
+		width: 100%;
+		border: 2px solid red;
+		margin: 0 auto;
 	}
 
 	.card {
 		grid-template-columns: repeat(3, 1fr);
-		max-width: 1440px;
 	}
 
 	.sedan {
